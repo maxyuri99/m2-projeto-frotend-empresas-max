@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/register.css">
+    <link rel="stylesheet" href="../styles/inputs.css">
+
+    <title>Kenzie Empresas</title>
+</head>
+
+<body>
+    <header>
+        <section class="container header__container">
+            <div class="header__div-title">
+                <div class="header__buble"></div>
+                <h1>Kenzie Empressas</h1>
+            </div>
+            <div class="header__div-buttons">
+                <button class="register header__buttons button__white">Home</button>
+                <button class="register__header-button-login header__buttons button__blue">Login</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="container container__main">
+            <form class="register__div-companies-container">
+                <h2>Cadastre-se</h2>
+                <div class="register__div-inputs">
+                    <input class="register__input" type="text" name="username" id="registerUsername"
+                        placeholder="Seu nome">
+                    <input class="register__input" type="email" name="email" id="registerEmail"
+                        placeholder="Seu e-mail">
+                    <input class="register__input" type="password" name="password" id="registerPassword"
+                        placeholder="Sua senha">
+                    <p class="error__text register-password__erro hidden">Preencha todos os campos!</p>
+                </div>
+
+                <div class="controller__spinner">
+                    <section class="spinner hidden__spinner"></section>
+                </div>
+                <div class="register__div-buttons">
+                    <button type="button" class="register__button-register button__blue">Cadastrar</button>
+                    <button type="button" class="register__button-back button__white">Retornar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

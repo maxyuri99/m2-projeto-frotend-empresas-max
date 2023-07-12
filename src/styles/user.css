@@ -1,0 +1,113 @@
+main {
+    height: 85vh;
+    padding-top: 15px;
+}
+
+.user__div-username {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 25px 15px;
+    border: 1px solid var(--gray600);
+
+    margin-bottom: 15px;
+
+    gap: 5px;
+}
+
+.user__div-username h1 {
+    font-size: var(--font-size-title-2);
+    font-weight: var(--weight-title-1);
+}
+
+.user__div-username p {
+    font-size: var(--font-size-title-3);
+    font-weight: var(--weight-title-2);
+}
+
+.user__div-name-company {
+    height: 50px;
+    background-color: var(--brand100);
+
+    font-size: var(--font-size-title-2);
+    font-weight: var(--weight-title-1);
+    
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.user__list-coworkers-controller {
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 15px 15px;
+    overflow: auto;
+    background-color: var(--gray900);
+    border: 1px solid var(--gray600);
+    gap: 10px;
+}
+
+.user__list-coworkers {
+    width: calc(33.33% - 30px); 
+    height: 50px;
+
+    flex: 0 0 auto;
+    border: 1px solid var(--brand100);
+    
+    padding: 5px;
+}
+
+.user__list-name-user {
+    margin-left: 5px;
+    margin-top: 5px;
+
+    font-size: var(--font-size-title-3);
+    font-weight: var(--weight-title-1);
+}
+
+.user__list-coworkers-controller::-webkit-scrollbar {
+    width: 6px;
+}
+
+.user__list-coworkers-controller::-webkit-scrollbar-track {
+    background-color: var(--gray800);
+    
+}
+
+.user__list-coworkers-controller::-webkit-scrollbar-thumb {
+    background-color: var(--brand100);
+    
+}
+
+.user__list-coworkers-controller::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gray500);
+}
+
+.user__div-controller-unemployed{
+    height: 260px;
+}
+
+.user__div-user-unemployed{
+    height: 100%;
+
+    background-color: var(--gray900);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--gray600);
+}
+
+.user__div-user-unemployed{
+    width: 100%;
+    height: 100%;
+    font-size: var(--font-size-title-1);
+    font-weight: var(--weight-title-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/inputs.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Kenzie Empresas</title>
+</head>
+
+<body>
+    <header>
+        <section class="container header__container">
+            <div class="header__div-title">
+                <div class="header__buble admin__buble"></div>
+                <h1>Kenzie Empressas</h1>
+            </div>
+            <div class="header__div-buttons">
+                <button class="admin__button-logout header__buttons button__white">Logout</button>
+            </div>
+        </section>
+    </header>
+
+    <main class="container">
+        <div class="admin__div-companies">
+            <select name="companies" id="selectCompanies" class="admin__select-companys">
+                <option value="" selected disabled hidden>Selecionar Empresa</option>
+                <option value="opicao1">Opção 1</option>
+                <option value="opicao2">Opção 2</option>
+                <option value="opicao3">Opção 3</option>
+            </select>
+        </div>
+        <div class="admin__div-department-container">
+            <div class="admin__div-name-department">
+                <h3 class="admin__name-department">Departamentos</h3>
+                <button type="button" class="admin__button-create-department button__blue">+ Criar</button>
+            </div>
+            <div class="div_controller-empyt-dp hidden">
+                <div class="admin__div-department-empyt">
+                    <h2>Empresa <span class="admin__span-name-company">NOME</span> não possui departamentos</h2>
+                </div>
+            </div>
+            <div class="admin__div-ul-empyt">
+                <ul class="admin__list-department-controller shadow-box">
+                    <li class="admin__list-department">
+                        <div class="admin__names-department-list">
+                            <h3>DepartamentoNome</h3>
+                            <p>DepartamentoDescrição</p>
+                            <p>NomeCompanhia</p>
+                        </div>
+                        <div class="admin__icon-department-list">
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </li>
+                    <li class="admin__list-department">
+                        <div class="admin__names-department-list">
+                            <h3>DepartamentoNome</h3>
+                            <p>DepartamentoDescrição</p>
+                            <p>NomeCompanhia</p>
+                        </div>
+                        <div class="admin__icon-department-list">
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </li>
+                    <li class="admin__list-department">
+                        <div class="admin__names-department-list">
+                            <h3>DepartamentoNome</h3>
+                            <p>DepartamentoDescrição</p>
+                            <p>NomeCompanhia</p>
+                        </div>
+                        <div class="admin__icon-department-list">
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </li>
+                    <li class="admin__list-department">
+                        <div class="admin__names-department-list">
+                            <h3>DepartamentoNome</h3>
+                            <p>DepartamentoDescrição</p>
+                            <p>NomeCompanhia</p>
+                        </div>
+                        <div class="admin__icon-department-list">
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </li>
+                    <li class="admin__list-department">
+                        <div class="admin__names-department-list">
+                            <h3>DepartamentoNome</h3>
+                            <p>DepartamentoDescrição</p>
+                            <p>NomeCompanhia</p>
+                        </div>
+                        <div class="admin__icon-department-list">
+                            <i class="fas fa-eye"></i>
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="admin__div-user-container">
+
+            <h3 class="admin__name-user">Usuários cadastrados</h3>
+
+            <ul class="admin__list-user-controller">
+                <li class="admin__list-user">
+                    <div class="admin__names-user-list">
+                        <h3 class="admin__list-name-user">UserName</h3>
+                        <p class="admin__list-name-company">NomeCompanhia</p>
+                    </div>
+                    <div class="admin__icon-user-list">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                <li class="admin__list-user">
+                    <div class="admin__names-user-list">
+                        <h3 class="admin__list-name-user">UserName</h3>
+                        <p class="admin__list-name-company">NomeCompanhia</p>
+                    </div>
+                    <div class="admin__icon-user-list">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                <li class="admin__list-user">
+                    <div class="admin__names-user-list">
+                        <h3 class="admin__list-name-user">UserName</h3>
+                        <p class="admin__list-name-company">NomeCompanhia</p>
+                    </div>
+                    <div class="admin__icon-user-list">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                <li class="admin__list-user">
+                    <div class="admin__names-user-list">
+                        <h3 class="admin__list-name-user">UserName</h3>
+                        <p class="admin__list-name-company">NomeCompanhia</p>
+                    </div>
+                    <div class="admin__icon-user-list">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                <li class="admin__list-user">
+                    <div class="admin__names-user-list">
+                        <h3 class="admin__list-name-user">UserName</h3>
+                        <p class="admin__list-name-company">NomeCompanhia</p>
+                    </div>
+                    <div class="admin__icon-user-list">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <dialog class="container modal-view-department__controller">
+        <section class="modal-view-department__section">
+            <div class="modal__view-department-div-close">
+                <button class="modal-view-department-close__button modal__close-button">X</button>
+            </div>
+            <h1 class="modal__name-department">Nome do Departamento</h1>
+            <h2 class="modal__view-department-description-department">Descrição do departamento</h2>
+            <p class="modal__view-department-name-companie">Empresa Pertencente</p>
+            <div class="modal__view-department-div-select-user">
+                <select name="username" id="selectUser" class="modal__view-department-select-user">
+                    <option value="" selected disabled hidden>Selecionar usuário</option>
+                    <option value="opicao1">Opção 1</option>
+                    <option value="opicao2">Opção 2</option>
+                    <option value="opicao3">Opção 3</option>
+                </select>
+                <button type="button" class="modal__view-department-button-contract button__green">Contratar</button>
+            </div>
+
+            <ul class="modal__view-department-list-user-controller">
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+                <li class="modal__view-department-list-user">
+                    <div class="modal__view-user-description-div">
+                        <h3 class="modal__view-department-user-name">UserName</h3>
+                        <p class="modal__view-department-user-company-name">Company Name</p>
+                    </div>
+                    <button type="button" class="modal__view-department-button-dismiss">Desligar</button>
+                </li>
+            </ul>
+
+        </section>
+    </dialog>
+
+    <dialog class="container modal-create-department__controller">
+        <section class="modal-create-department__section">
+            <div class="modal__create-department-div-close">
+                <button class="modal-create-department-close__button modal__close-button">X</button>
+            </div>
+            <h1 class="modal__create-department-title">Criar Departamento</h1>
+            <form class="modal__create-department-div">
+                <input type="text" name="department" id="nameDepartment" class="modal__create-department-name"
+                    placeholder="Nome do departamento">
+                <input type="text" name="description" id="descriptionDepartment"
+                    class="modal__create-department-description" placeholder="Descrição">
+                <select name="company" id="selectCompany" class="modal__create-department-select-company">
+                    <option value="" selected disabled hidden>Selecionar empresa</option>
+                    <option value="opicao1">Opção 1</option>
+                    <option value="opicao2">Opção 2</option>
+                    <option value="opicao3">Opção 3</option>
+                </select>
+                <button type="button" class="modal__create-department-button-contract button__green">Criar</button>
+            </form>
+        </section>
+    </dialog>
+
+    <dialog class="container modal-edit-department__controller">
+        <section class="modal-edit-department__section">
+            <div class="modal__edit-department-div-close">
+                <button class="modal-remove-department-close__button modal__close-button">X</button>
+            </div>
+
+            <h1 class="modal__edit-department-title">Editar Departamento</h1>
+
+            <form class="modal__edit-department-form">
+                <textarea type="text" name="description" id="descriptionDepartment"
+                    class="modal__edit-department-description" placeholder="Insiar uma descrição"></textarea>
+                <button type="button" class="modal__edit-department-button-contract button__green">Salvar</button>
+            </form>
+        </section>
+    </dialog>
+
+    <dialog class="container modal-remove-department__controller">
+        <section class="modal__remove-department-section">
+            <div class="modal__remove-department-div-close">
+                <button class="modal-remove-department-close__button modal__close-button">X</button>
+            </div>
+            <div class="modal__remove-department-div">
+                <h1 class="modal__remove-department-title">Relamente deseja remover o </h1>
+                <h1>Departamento <span class="modal__remove-department-name">NOME</span></h1>
+                <h1> e demitir seus funcionários?</h1>
+                <button type="button" class="modal__remove-department-button button__red">Remover</button>
+            </div>
+        </section>
+    </dialog>
+
+    <dialog class="container modal-edit-user__controller">
+        <section class="modal-edit-user__section">
+            <div class="modal__edit-user-div-close">
+                <button class="modal-edit-user-close__button modal__close-button">X</button>
+            </div>
+
+            <h1 class="modal__edit-user-title">Editar Usuário</h1>
+            <form class="modal__edit-user-form">
+                <input type="text" name="username" id="userName" class="modal__edit-user-name" placeholder="Nome">
+                <input type="text" name="email" id="emailUser" class="modal__edit-user-email" placeholder="Email">
+                <button type="button" class="modal__edit-user-button-save button__green">Salvar</button>
+            </form>
+        </section>
+    </dialog>
+
+    <dialog class="container modal-remove-user__controller">
+        <section class="modal__remove-user-section">
+            <div class="modal__remove-user-div-close">
+                <button class="modal-remove-user-close__button modal__close-button">X</button>
+            </div>
+            <div class="modal__remove-user-div">
+                <h1>Relamente deseja remover o </h1>
+                <h1>usuário <span class="modal__remove-user-name">NOME</span> ?</h1>
+                <button type="button" class="modal__remove-user-button button__red">Remover</button>
+            </div>
+        </section>
+    </dialog>
+
+    <script type="module" src="../scripts/admin.js"></script>
+</body>
+
+</html>

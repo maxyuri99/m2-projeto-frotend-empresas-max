@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/buttons.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/inputs.css">
+
+    <title>Kenzie Empresas</title>
+</head>
+
+<body>
+    <header>
+        <section class="container header__container">
+            <div class="header__div-title">
+                <div class="header__buble"></div>
+                <h1>Kenzie Empressas</h1>
+            </div>
+            <div class="header__div-buttons">
+                <button class="login__header-button-home header__buttons button__white">Home</button>
+                <button class="login__header-button-register header__buttons button__blue">Cadastro</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="container container__main">
+            <form class="login__div-companies-container">
+                <h2>Login</h2>
+                <p>Preencha os campos para realizar login</p>
+                <div class="login__div-inputs">
+                    <input class="login__input" type="email" name="email" id="loginEmail"
+                        placeholder="Seu e-mail">
+                    <p class="error__text login-error__email hidden">O email está incorreto</p>
+                    <input class="login__input" type="password" name="password" id="loginPassword"
+                        placeholder="Sua senha">
+                    <p class="error__text login-password__erro hidden">A senha está incorreta</p>
+                </div>
+
+                <div class="controller__spinner">
+                    <section class="spinner hidden__spinner"></section>
+                </div>
+                <div class="login__div-buttons">
+                    <button type="button" class="login__button-acess button__blue">Acessar</button>
+                    <p>ou</p>
+                    <button type="button" class="login__button-register button__white">Cadastrar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
