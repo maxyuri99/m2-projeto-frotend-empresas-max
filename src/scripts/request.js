@@ -22,12 +22,16 @@ export const authLogin = async (bodyRequest) => {
     const authUserLogin = await api
         .post(url, bodyRequest)
         .then((res) => {
+            const spinner = document.querySelector('.spinner')
             createToastify('Login feito com sucesso', 'var(--sucess100)')
             if (res.data.isAdm){
-                localStorage.setItem('@empkenzie:admintoken', res.data.token)
+                
+                localStorage.setItem('@empkenzie:admintoken', res.data.authToken)
+                spinner.classList.remove('hidden__spinner')
                 return location.replace('../pages/admin.html')
             } else {
-                localStorage.setItem('@empkenzie:usertoken', res.data.token)
+                localStorage.setItem('@empkenzie:usertoken', res.data.authToken)
+                spinner.classList.remove('hidden__spinner')
                 return location.replace('../pages/user.html')
             }            
         })

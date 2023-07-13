@@ -26,7 +26,7 @@ export const render = (firstParameter, renderObject) => {
 
         mainList.innerHTML = ''
 
-        renderObject.forEach( async (companyArray) => {
+        renderObject.forEach(async (companyArray) => {
             const getCategoryById = await getAllCategories()
 
             getCategoryById.forEach((categoryArray) => {
@@ -36,9 +36,34 @@ export const render = (firstParameter, renderObject) => {
                     mainList.appendChild(card)
                 }
             })
-            
+
+        })
+    } else if (firstParameter === 'userEmployees') {
+        const mainList = document.querySelector('.user__list-coworkers-controller')
+
+        mainList.innerHTML = ''
+
+        renderObject.employees.forEach((employeesArray) => {
+            const card = createEmployeesDepartment(employeesArray)
+
+            mainList.appendChild(card)
         })
     }
+}
+
+export const createEmployeesDepartment = (nameEmployeerArray) => {
+    const li = document.createElement('li')
+    const nameEmployeer = document.createElement('h3')
+
+    li.classList = 'user__list-coworkers'
+    nameEmployeer.classList = 'user__list-name-user'
+
+    nameEmployeer.innerText = nameEmployeerArray.name
+
+    li.append(nameEmployeer)
+
+    return li
+
 }
 
 export const createAllCategorysIndex = (category) => {

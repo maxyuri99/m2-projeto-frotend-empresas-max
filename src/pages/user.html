@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="../styles/user.css">
     <link rel="stylesheet" href="../styles/inputs.css">
 
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <title>Kenzie Empresas</title>
 </head>
 
@@ -21,15 +27,15 @@
                 <h1>Kenzie Empressas</h1>
             </div>
             <div class="header__div-buttons">
-                <button class="header__buttons button__white">Logout</button>
+                <button class="header__buttons button__logout button__white">Logout</button>
             </div>
         </section>
     </header>
 
     <main class="container">
         <div class="user__div-username">
-            <h1>USERNAME</h1>
-            <p>meuemail@mail.com</p>
+            <h1 class="user__username-top">USERNAME</h1>
+            <p class="user__email-top">meuemail@mail.com</p>
         </div>
         <div class="user__div-controller-unemployed hidden">
             <div class="user__div-user-unemployed">
@@ -103,6 +109,11 @@
             </ul>
         </div>
     </main>
+
+    <!-- TOASTIFY SCRIPT -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="module" src="../scripts/user.js"></script>
 </body>
 
 </html>
