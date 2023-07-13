@@ -6,3 +6,11 @@ input {
     border: 1px solid var(--gray500); 
 
 }
+
+.input__error-red{
+    border-color: var(--alert100);
+}
+
+.input__error-red:hover{
+    border-color: var(--alert200);
+}
