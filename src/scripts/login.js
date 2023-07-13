@@ -24,8 +24,6 @@ const handleLogin = () => {
 
             return createToastify('Campo faltando', 'var(--alert100)')
         } else {
-            spinner.classList.remove('hidden__spinner')
-
             await authLogin(loginBody)
         }
     })
