@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/inputs.css">
 
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+     <!-- TOASTIFY -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <title>Kenzie Empresas</title>
 </head>
 
@@ -22,7 +28,7 @@
             </div>
             <div class="header__div-buttons">
                 <button class="login__header-button-home header__buttons button__white">Home</button>
-                <button class="login__header-button-register header__buttons button__blue">Cadastro</button>
+                <button class="login__header-button-register button-register header__buttons button__blue">Cadastro</button>
             </div>
         </section>
     </header>
@@ -35,10 +41,8 @@
                 <div class="login__div-inputs">
                     <input class="login__input" type="email" name="email" id="loginEmail"
                         placeholder="Seu e-mail">
-                    <p class="error__text login-error__email hidden">O email está incorreto</p>
                     <input class="login__input" type="password" name="password" id="loginPassword"
                         placeholder="Sua senha">
-                    <p class="error__text login-password__erro hidden">A senha está incorreta</p>
                 </div>
 
                 <div class="controller__spinner">
@@ -47,11 +51,16 @@
                 <div class="login__div-buttons">
                     <button type="button" class="login__button-acess button__blue">Acessar</button>
                     <p>ou</p>
-                    <button type="button" class="login__button-register button__white">Cadastrar</button>
+                    <button type="button" class="login__button-register button-register button__white">Cadastrar</button>
                 </div>
             </form>
         </section>
     </main>
+
+    <!-- TOASTIFY SCRIPT -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="module" src="../scripts/login.js"></script>
 </body>
 
 </html>

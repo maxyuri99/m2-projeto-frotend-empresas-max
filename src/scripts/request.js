@@ -23,10 +23,17 @@ export const authLogin = async (bodyRequest) => {
         .post(url, bodyRequest)
         .then((res) => {
             createToastify('Login feito com sucesso', 'var(--sucess100)')
-            return res.data
+            if (res.data.isAdm){
+                localStorage.setItem('@empkenzie:admintoken', res.data.token)
+                return location.replace('../pages/admin.html')
+            } else {
+                localStorage.setItem('@empkenzie:usertoken', res.data.token)
+                return location.replace('../pages/user.html')
+            }            
         })
         .catch((err) => {
             createToastify(err.response.data.message, 'var(--alert100)')
+            return err.response.data.message
         })
 
     return authUserLogin
