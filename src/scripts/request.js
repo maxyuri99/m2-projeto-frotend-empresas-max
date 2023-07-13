@@ -45,8 +45,12 @@ export const registerEmployees = async (bodyRequest) => {
     const regEmployees = await api
         .post(url, bodyRequest)
         .then((res) => {
-            createToastify('Usuário criado com sucesso', 'var(--sucess100)')
-            return res.data
+            createToastify('Usuário criado, você será redirecionado para pagina de login', 'var(--sucess100)')
+
+            setTimeout(() => {
+                return location.replace('./login.html')
+            }, 2000)
+
         })
         .catch((err) => {
             createToastify(err.response.data.message, 'var(--alert100)')
