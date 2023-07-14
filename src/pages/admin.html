@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="../styles/modal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
+    <!-- AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
     <title>Kenzie Empresas</title>
 </head>
 
@@ -113,7 +119,6 @@
             </div>
         </div>
         <div class="admin__div-user-container">
-
             <h3 class="admin__name-user">Usuários cadastrados</h3>
 
             <ul class="admin__list-user-controller">
@@ -186,7 +191,10 @@
                     <option value="opicao2">Opção 2</option>
                     <option value="opicao3">Opção 3</option>
                 </select>
-                <button type="button" class="modal__view-department-button-contract button__green">Contratar</button>
+                <div class="modal__view-button-separe">
+                    <button type="button"
+                        class="modal__view-department-button-contract button__green">Contratar</button>
+                </div>
             </div>
 
             <ul class="modal__view-department-list-user-controller">
@@ -272,7 +280,7 @@
             </div>
             <h1 class="modal__create-department-title">Criar Departamento</h1>
             <form class="modal__create-department-div">
-                <input type="text" name="department" id="nameDepartment" class="modal__create-department-name"
+                <input type="text" name="name" id="nameDepartment" class="modal__create-department-name"
                     placeholder="Nome do departamento">
                 <input type="text" name="description" id="descriptionDepartment"
                     class="modal__create-department-description" placeholder="Descrição">
@@ -282,7 +290,9 @@
                     <option value="opicao2">Opção 2</option>
                     <option value="opicao3">Opção 3</option>
                 </select>
-                <button type="button" class="modal__create-department-button-contract button__green">Criar</button>
+                <div class="modal__button-div-create">
+                    <button type="button" class="modal__create-department-button-contract button__green">Criar</button>
+                </div>
             </form>
         </section>
     </dialog>
@@ -290,7 +300,7 @@
     <dialog class="container modal-edit-department__controller">
         <section class="modal-edit-department__section">
             <div class="modal__edit-department-div-close">
-                <button class="modal-remove-department-close__button modal__close-button">X</button>
+                <button class="modal-edit-department-close__button modal__close-button">X</button>
             </div>
 
             <h1 class="modal__edit-department-title">Editar Departamento</h1>
@@ -298,7 +308,9 @@
             <form class="modal__edit-department-form">
                 <textarea type="text" name="description" id="descriptionDepartment"
                     class="modal__edit-department-description" placeholder="Insiar uma descrição"></textarea>
-                <button type="button" class="modal__edit-department-button-contract button__green">Salvar</button>
+                <div class="modal__button-div-department-edit">
+                    <button type="button" class="modal__edit-department-button-contract button__green">Salvar</button>
+                </div>
             </form>
         </section>
     </dialog>
@@ -312,7 +324,9 @@
                 <h1 class="modal__remove-department-title">Relamente deseja remover o </h1>
                 <h1>Departamento <span class="modal__remove-department-name">NOME</span></h1>
                 <h1> e demitir seus funcionários?</h1>
-                <button type="button" class="modal__remove-department-button button__red">Remover</button>
+                <div class="modal__button-div-department-remove">
+                    <button type="button" class="modal__remove-department-button button__red">Remover</button>
+                </div>
             </div>
         </section>
     </dialog>
@@ -325,9 +339,11 @@
 
             <h1 class="modal__edit-user-title">Editar Usuário</h1>
             <form class="modal__edit-user-form">
-                <input type="text" name="username" id="userName" class="modal__edit-user-name" placeholder="Nome">
+                <input type="text" name="name" id="userName" class="modal__edit-user-name" placeholder="Nome">
                 <input type="text" name="email" id="emailUser" class="modal__edit-user-email" placeholder="Email">
-                <button type="button" class="modal__edit-user-button-save button__green">Salvar</button>
+                <div class="modal__button-div-user-save">
+                    <button type="button" class="modal__edit-user-button-save button__green">Salvar</button>
+                </div>
             </form>
         </section>
     </dialog>
@@ -340,12 +356,17 @@
             <div class="modal__remove-user-div">
                 <h1>Relamente deseja remover o </h1>
                 <h1>usuário <span class="modal__remove-user-name">NOME</span> ?</h1>
-                <button type="button" class="modal__remove-user-button button__red">Remover</button>
+                <div class="modal__button-div-user-remove">
+                    <button type="button" class="modal__remove-user-button button__red">Remover</button>
+                </div>
             </div>
         </section>
     </dialog>
 
-    <script type="module" src="../scripts/admin.js"></script>
+    <!-- TOASTIFY SCRIPT -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script type="module" src="../scripts/pageAdmin.js"></script>
 </body>
 
 </html>

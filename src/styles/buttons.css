@@ -79,7 +79,7 @@ button {
 }
 
 .modal__view-department-button-contract {
-    width: 190px;
+    width: 130px;
 }
 
 .modal__view-department-button-dismiss {
@@ -91,12 +91,12 @@ button {
     background-color: var(--white);
 }
 
-.modal__view-department-button-dismiss:hover{
+.modal__view-department-button-dismiss:hover {
     background-color: var(--orange);
     color: var(--white);
 }
 
-.button__red{
+.button__red {
     width: 342px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -108,7 +108,14 @@ button {
 }
 
 .modal__edit-user-button-save,
-.modal__remove-user-button{
+.modal__remove-user-button {
     margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.modal__create-department-button-contract,
+.modal__edit-department-button-contract,
+.modal__edit-user-button-save {
+    width: 100%;
     margin-bottom: 15px;
 }

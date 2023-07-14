@@ -4,8 +4,9 @@ import { createToastify } from "./toastify.js"
 const handleLogin = () => {
     const inputs = document.querySelectorAll('.login__input')
     const buttonAcess = document.querySelector('.login__button-acess')
-    const buttonRegister = document.querySelectorAll('.button-register')
-    const spinner = document.querySelector('.spinner')
+    const buttonRegister = document.querySelectorAll('.button-register-login')
+    const buttonHome = document.querySelector('.login__header-button-home ')
+
     let loginBody = {}
     let count = 0
 
@@ -32,6 +33,10 @@ const handleLogin = () => {
         button.addEventListener('click', () => {
             location.replace('./register.html')
         })
+    })
+
+    buttonHome.addEventListener('click', () => {
+        location.replace('../../index.html')
     })
 
 }
