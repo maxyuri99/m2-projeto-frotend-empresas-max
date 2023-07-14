@@ -1,0 +1,172 @@
+.modal-view-department__controller {
+    width: 550px;
+    margin-top: 20vh;
+}
+
+.modal-view-department__section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.modal__view-department-div-close,
+.modal__create-department-div-close,
+.modal__edit-department-div-close,
+.modal__remove-department-div-close,
+.modal__edit-user-div-close,
+.modal__remove-user-div-close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal__name-department,
+.modal__create-department-title,
+.modal__edit-department-title,
+.modal__edit-user-title {
+    margin-bottom: 10px;
+    font-size: var(--font-size-title-1);
+    font-weight: var(--weight-title-1);
+}
+
+.modal__view-department-description-department,
+.modal__view-department-user-name {
+    font-size: var(--font-size-title-2);
+    font-weight: var(--weight-title-1);
+}
+
+.modal__view-department-name-companie,
+.modal__view-department-user-company-name {
+    font-size: var(--font-size-title-3);
+    font-weight: var(--weight-title-3);
+}
+
+.modal__view-department-div-select-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.modal__view-department-select-user {
+    width: 100%;
+    height: 37px;
+
+    border: 1px solid var(--gray500);
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.modal__view-department-list-user-controller {
+    height: 12.5rem;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+
+    background-color: var(--gray800);
+
+    overflow: auto;
+    gap: 15px;
+}
+
+.modal__view-department-list-user-controller::-webkit-scrollbar {
+    width: 0.375rem;
+    height: 10px;
+}
+
+.modal__view-department-list-user-controller::-webkit-scrollbar-track {
+    background-color: var(--gray600);
+
+}
+
+.modal__view-department-list-user-controller::-webkit-scrollbar-thumb {
+    background-color: var(--brand100);
+
+}
+
+.modal__view-department-list-user-controller::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gray500);
+}
+
+.modal__view-department-list-user {
+    width: 206px;
+    height: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    padding: 15px;
+    box-sizing: border-box;
+
+    background-color: var(--white);
+
+    border-bottom: 1px solid var(--brand100);
+}
+
+.modal__view-user-description-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.modal-create-department__controller,
+.modal-edit-department__controller,
+.modal-edit-user__controller {
+    width: 300px;
+    margin-top: 20vh;
+}
+
+.modal__create-department-div,
+.modal-edit-department__section,
+.modal__edit-department-form, 
+.modal-edit-user__section,
+.modal__edit-user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal__create-department-select-company {
+    height: 32px;
+    border: 1px solid var(--gray500);
+    box-sizing: border-box;
+}
+
+.modal__edit-department-description {
+    height: 113px;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.modal-remove-department__controller, .modal-remove-user__controller {
+    width: 500px;
+    margin-top: 20vh;
+}
+
+.modal__remove-department-div,
+.modal__remove-user-div {
+    font-size: var(--font-size-title-1);
+    font-weight: var(--weight-title-1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__remove-user-section{
+    display: flex;
+    flex-direction: column;
+}

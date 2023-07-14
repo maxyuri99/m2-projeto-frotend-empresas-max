@@ -1,0 +1,121 @@
+.admin__buble {
+    background-color: var(--brand300);
+}
+
+button {
+    height: 33px;
+
+    cursor: pointer;
+}
+
+.header__div-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.button__white {
+    border: 1px solid var(--brand100);
+    color: var(--brand100);
+    background-color: var(--white);
+}
+
+.button__white:hover {
+    color: var(--white);
+    background-color: var(--brand200);
+}
+
+.button__blue {
+    color: var(--white);
+    background-color: var(--brand100);
+}
+
+.button__blue:hover {
+    background-color: var(--brand200);
+}
+
+.header__buttons {
+    width: 97px;
+
+    font-size: var(--font-size-text);
+    font-weight: var(--weight-title-1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login__button-acess,
+.login__button-register,
+.register__button-register,
+.register__button-back {
+    width: 100%;
+}
+
+.admin__button-create-department {
+    width: 97px;
+
+    font-size: var(--font-size-text);
+    font-weight: var(--weight-title-3);
+}
+
+.modal__close-button {
+    background-color: inherit;
+}
+
+.button__green {
+    height: 37px;
+    background-color: var(--green);
+    color: var(--white);
+    font-size: var(--font-size-title-3);
+    font-weight: var(--weight-title-2);
+}
+
+
+.button__green:hover {
+    background-color: var(--sucess100);
+}
+
+.modal__view-department-button-contract {
+    width: 130px;
+}
+
+.modal__view-department-button-dismiss {
+    width: 100%;
+    border: 1px solid var(--orange);
+    color: var(--orange);
+    font-size: var(--font-size-title-3);
+    font-weight: var(--weight-title-1);
+    background-color: var(--white);
+}
+
+.modal__view-department-button-dismiss:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.button__red {
+    width: 342px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 37px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: var(--font-size-title-3);
+    font-weight: var(--weight-title-2);
+}
+
+.modal__edit-user-button-save,
+.modal__remove-user-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.modal__create-department-button-contract,
+.modal__edit-department-button-contract,
+.modal__edit-user-button-save {
+    width: 100%;
+    margin-bottom: 15px;
+}
