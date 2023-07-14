@@ -183,24 +183,29 @@ export const hireEmployee = async (idEmployee, bodyRequest) => {
     return employeeHire
 }
 
-// Com problema
 export const dismissEmployee = async (idEmployee) => {
     const token = localStorage.getItem('@empkenzie:admintoken')
-    const headers = { 'Authorization': `Bearer ${token}` }
-    const url = `/employees/dismissEmployee/${idEmployee}`
-
-    const employeeDismiss = await api
-        .patch(url, { headers })
-        .then((res) => {
-            createToastify(res.data.message, 'var(--sucess100)')
-            return res.data
-        })
-        .catch((err) => {
-            console.log(err)
-            createToastify(err.response.data.message, 'var(--alert100)')
-        })
-
-    return employeeDismiss
+    const post = await fetch(`http://localhost:3333/employees/dismissEmployee/${idEmployee}`, {
+      method: "PATCH",
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+    .then(async (res) => {
+      const resJson = await res.json()
+  
+      if(res.ok) {  
+        createToastify(resJson.message, 'var(--sucess100)')
+        return resJson
+      } else {
+        throw new Error(resJson.message)
+      }
+    })
+    .catch(err => {
+         createToastify(err, 'var(--alert100)')
+    })
+  
+    return post
 }
 
 export const registerDepartment = async (bodyRequest) => {

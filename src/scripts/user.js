@@ -1,5 +1,5 @@
+import { renderIndex } from "./renderIndex.js"
 import { getDepartmentToUser, getEmployeesProfile } from "./request.js"
-import { render } from "./render.js"
 
 const authentication = () => {
     const token = localStorage.getItem('@empkenzie:usertoken')
@@ -28,7 +28,7 @@ const handleUser = async () =>{
         nameCompany.innerText = employeesDepartment.company.name
         nameDepartment.innerText = employeesDepartment.name
 
-        render('userEmployees', employeesDepartment)
+        renderIndex('userEmployees', employeesDepartment)
         
     } else {
         const divUneployed = document.querySelector('.user__div-controller-unemployed')

@@ -236,3 +236,7 @@ body::-webkit-scrollbar-thumb:hover,
 .admin__list-user-controller::-webkit-scrollbar-thumb:hover {
     background-color: var(--gray500);
 }
+
+.modal__button-div-create, .modal__button-div-department-edit,.modal__button-div-user-save{
+    width: 100%;
+}
